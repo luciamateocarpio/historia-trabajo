@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Segunda Guerra Mundial: nazismo en Alemania y fascismo en Italia</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO / NAV ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Segunda Guerra Mundial: nazismo en Alemania y fascismo en Italia</h1>
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú">Menú</button>
+    </div>
+    <nav id="mainNav" class="main-nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#contexto">Contexto histórico</a></li>
+        <li><a href="#red">Red de relaciones</a></li>
+        <li><a href="#video">Documental</a></li>
+        <li><a href="#linea">Línea de tiempo</a></li>
+        <li><a href="#conclusiones">Conclusiones</a></li>
+        <li><a href="#fuentes">Fuentes</a></li>
+        <li><a href="#ia">Uso de IA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== 1. INICIO ===== -->
+    <section id="inicio" class="section">
+      <h2 class="section-title">Inicio</h2>
+      <div class="portada">
+        <h3 class="pregunta-central">
+          ¿Cómo llegaron el fascismo y el nazismo al poder y hasta qué punto llevaron a Europa a la guerra?
+        </h3>
+        <div class="integrantes">
+          <h4>Integrantes (en orden alfabético por apellido)</h4>
+          <ol>
+            <li>Ayta, Nayeli</li>
+            <li>Huarachi, Yennifer</li>
+            <li>Mateo, Lucía</li>
+            <li>Montalvo, Annel</li>
+            <li>Nuñez, Heidy</li>
+            <li>Sanchez, Mauricio</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. CONTEXTO HISTÓRICO ===== -->
+    <section id="contexto" class="section">
+      <h2 class="section-title">Contexto histórico</h2>
+      <div class="contexto-caja">
+        <p>
+          La Segunda Guerra Mundial no tuvo una sola causa. Fue el resultado de la combinación
+          de los problemas que dejó la Primera Guerra Mundial, la inestabilidad de la República
+          de Weimar, la crisis económica de 1929, el miedo al comunismo, la crisis de las
+          democracias y la debilidad de la Sociedad de Naciones.
+        </p>
+        <p>
+          La Primera Guerra Mundial dejó cerca de 10 millones de militares muertos, economías
+          devastadas, deudas enormes y cuatro imperios desaparecidos. El Tratado de Versalles
+          (1919) impuso a Alemania pérdidas territoriales, límites militares, reparaciones y
+          la aceptación de la responsabilidad por la guerra. Estas condiciones alimentaron el
+          resentimiento aprovechado por el nazismo.
+        </p>
+        <p>
+          En Italia, el desempleo, los precios elevados, las huelgas, la violencia política y
+          la frustración por los territorios no obtenidos favorecieron el surgimiento del
+          fascismo. En Alemania, la hiperinflación de 1923, la crisis de 1929 y la inestabilidad
+          política debilitaron la confianza en la República de Weimar. En ese contexto,
+          Mussolini y Hitler utilizaron propaganda, violencia, intimidación y discursos
+          nacionalistas para obtener apoyo.
+        </p>
+        <p>
+          Durante la década de 1930, ambos regímenes impulsaron políticas expansionistas que
+          debilitaron el orden internacional. La invasión de Etiopía, el rearme alemán, la
+          anexión de Austria, la ocupación de Checoslovaquia y la invasión de Polonia llevaron
+          finalmente al estallido de la Segunda Guerra Mundial.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 3. RED INTERACTIVA DE RELACIONES ===== -->
+    <section id="red" class="section">
+      <h2 class="section-title">Red interactiva de relaciones históricas</h2>
+      <p class="section-intro">
+        Hacé clic en un nodo para ver su descripción y por qué se conecta con otros.
+        Usá los filtros para mostrar solo un tipo de nodo.
+      </p>
+
+      <!-- Filtros por tipo de nodo -->
+      <div class="filtros" id="filtros">
+        <button class="filtro-btn activo" data-tipo="todos">Todos</button>
+        <button class="filtro-btn" data-tipo="causa">Causas</button>
+        <button class="filtro-btn" data-tipo="actor">Actores</button>
+        <button class="filtro-btn" data-tipo="acontecimiento">Acontecimientos</button>
+        <button class="filtro-btn" data-tipo="consecuencia">Consecuencias</button>
+      </div>
+
+      <!-- Contenedor de la red (los nodos se generan con JS) -->
+      <div class="red-contenedor" id="redContenedor"></div>
+
+      <!-- Panel donde aparece la descripción del nodo seleccionado -->
+      <div class="panel-nodo" id="panelNodo">
+        <p class="panel-placeholder">Seleccioná un nodo para ver su descripción y sus conexiones.</p>
+      </div>
+    </section>
+
+    <!-- ===== 4. VIDEO DEL DOCUMENTAL ===== -->
+    <section id="video" class="section">
+      <h2 class="section-title">Documental</h2>
+      <p class="section-intro">Video integrado del documental consultado por el equipo.</p>
+      <div class="video-wrap">
+        <!-- iframe de YouTube con id de ejemplo (reemplazar por el real) -->
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Documental sobre el ascenso del fascismo y el nazismo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="falta">FALTA COMPLETAR: reemplazar el id de ejemplo (dQw4w9WgXcQ) por el id del documental real.</p>
+    </section>
+
+    <!-- ===== 5. LÍNEA DE TIEMPO FILTRABLE ===== -->
+    <section id="linea" class="section">
+      <h2 class="section-title">Línea de tiempo interactiva</h2>
+      <p class="section-intro">Filtrá los acontecimientos por país.</p>
+      <div class="filtros" id="filtrosPais">
+        <button class="filtro-btn activo" data-pais="todos">Todos</button>
+        <button class="filtro-btn" data-pais="Italia">Italia</button>
+        <button class="filtro-btn" data-pais="Alemania">Alemania</button>
+      </div>
+      <ul class="linea-tiempo" id="lineaTiempo"></ul>
+    </section>
+
+    <!-- ===== 6. CONCLUSIONES ===== -->
+    <section id="conclusiones" class="section">
+      <h2 class="section-title">Conclusiones</h2>
+      <div class="conclusiones-caja">
+        <h3>1. ¿Cómo llegaron al poder?</h3>
+        <p>
+          El fascismo y el nazismo llegaron al poder en un contexto de crisis económica,
+          inestabilidad política, miedo al comunismo y desconfianza en las democracias. En
+          Italia, Mussolini aprovechó el desempleo, las huelgas, la violencia política y la
+          frustración nacionalista. La Marcha sobre Roma de octubre de 1922 presionó al rey
+          Víctor Manuel III, quien encargó a Mussolini formar gobierno. Después, mediante la
+          Ley Acerbo, la violencia de los Camisas Negras, la eliminación de la oposición y la
+          propaganda, transformó gradualmente el gobierno de coalición en una dictadura.
+        </p>
+        <p>
+          En Alemania, el Tratado de Versalles, la hiperinflación de 1923, la crisis de 1929 y
+          la inestabilidad de la República de Weimar favorecieron el crecimiento del Partido
+          Nazi. Hitler fue nombrado canciller el 30 de enero de 1933 por el presidente Paul von
+          Hindenburg, después de acuerdos con sectores conservadores. Luego utilizó el incendio
+          del Reichstag, el decreto de emergencia, la Ley Habilitante, la persecución y la
+          eliminación de los partidos para destruir la democracia e instaurar el Tercer Reich.
+        </p>
+        <h3>2. ¿Hasta qué punto llevaron a Europa a la guerra?</h3>
+        <p>
+          Ambos regímenes fueron decisivos porque combinaron nacionalismo extremo, militarismo,
+          expansionismo y debilitamiento del orden internacional. Italia invadió Etiopía en
+          1935 y se acercó a Alemania después de las sanciones internacionales. Alemania
+          reintrodujo el servicio militar, remilitarizó Renania en 1936, anexó Austria en marzo
+          de 1938 y ocupó el resto de Checoslovaquia en marzo de 1939. La política de
+          apaciguamiento de Francia y Gran Bretaña no detuvo estas agresiones.
+        </p>
+        <p>
+          El 1 de septiembre de 1939 Alemania invadió Polonia. Francia y Reino Unido declararon
+          la guerra el 3 de septiembre, dando inicio oficial a la Segunda Guerra Mundial. Más
+          adelante, Italia entró formalmente al conflicto junto a Alemania el 10 de junio de
+          1940. Por ello, el fascismo y el nazismo no fueron la única causa, pero sus decisiones
+          expansionistas y la debilidad de la respuesta internacional llevaron a Europa al
+          conflicto generalizado.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 7. FUENTES ===== -->
+    <section id="fuentes" class="section">
+      <h2 class="section-title">Fuentes</h2>
+      <ul class="fuentes-lista" id="listaFuentes">
+        <!-- Las fuentes se cargan con JS desde el arreglo -->
+      </ul>
+
+    </section>
+
+    <!-- ===== 8. USO DE IA ===== -->
+    <section id="ia" class="section">
+      <h2 class="section-title">Declaración sobre el uso de IA</h2>
+      <div class="ia-caja">
+        <p>Completar los siguientes campos sobre el uso de herramientas de IA en este trabajo:</p>
+        <form class="ia-form" onsubmit="return false">
+          <label>Herramientas de IA utilizadas:
+            <input type="text" placeholder="Ej.: ChatGPT, Bolt..." class="falta-input">
+          </label>
+          <label>Para qué se usó la IA:
+            <input type="text" placeholder="Ej.: estructura de la página, redacción..." class="falta-input">
+          </label>
+          <label>Qué partes fueron revisadas y corregidas por el equipo:
+            <input type="text" placeholder="Ej.: contenido histórico, conclusiones..." class="falta-input">
+          </label>
+          <label>Responsable de la declaración:
+            <input type="text" placeholder="Apellido, Nombre" class="falta-input">
+          </label>
+        </form>
+        <p class="falta">FALTA COMPLETAR: completar los campos anteriores antes de entregar.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Trabajo práctico — Historia — Segunda Guerra Mundial: nazismo en Alemania y fascismo en Italia.</p>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>

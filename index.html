@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>De las cenizas de la crisis al estallido de Europa: cuando las dictaduras convirtieron el resentimiento en guerra.</title>
+  <title>Segunda Guerra Mundial: Nazismo en Alemania y Fascismo en Italia</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -34,9 +34,24 @@
     <section id="inicio" class="section">
       <h2 class="section-title">Inicio</h2>
       <div class="portada">
+        <p class="eslogan">
+          <em>«De las cenizas de la crisis al estallido de Europa: cuando las dictaduras convirtieron el resentimiento en guerra.»</em>
+        </p>
+
         <h3 class="pregunta-central">
           ¿Cómo llegaron el fascismo y el nazismo al poder y hasta qué punto llevaron a Europa a la guerra?
         </h3>
+
+        <div class="proposito-publico">
+          <h4>Finalidad y público objetivo</h4>
+          <p>
+            <strong>Finalidad:</strong> Página web de carácter <strong>educativo y divulgativo</strong> diseñada para explicar, de forma rigurosa e interactiva, las causas, actores y procesos mediante los cuales el fascismo italiano y el nazismo alemán alcanzaron el poder y desencadenaron la Segunda Guerra Mundial en Europa.
+          </p>
+          <p>
+            <strong>Público objetivo:</strong> Estudiantes universitarios, docentes y público general interesado en comprender las relaciones históricas entre la crisis de entreguerras, el ascenso de los totalitarismos y el estallido del conflicto.
+          </p>
+        </div>
+
         <div class="integrantes">
           <h4>Integrantes (en orden alfabético por apellido)</h4>
           <ol>
@@ -89,8 +104,8 @@
     <section id="red" class="section">
       <h2 class="section-title">Red interactiva de relaciones históricas</h2>
       <p class="section-intro">
-        Hacé clic en un nodo para ver su descripción y por qué se conecta con otros.
-        Usá los filtros para mostrar solo un tipo de nodo.
+        Haz clic en un nodo para ver su descripción y por qué se conecta con otros.
+        Usa los filtros para mostrar solo un tipo de nodo.
       </p>
 
       <!-- Filtros por tipo de nodo -->
@@ -107,28 +122,29 @@
 
       <!-- Panel donde aparece la descripción del nodo seleccionado -->
       <div class="panel-nodo" id="panelNodo">
-        <p class="panel-placeholder">Seleccioná un nodo para ver su descripción y sus conexiones.</p>
+        <p class="panel-placeholder">Selecciona un nodo para ver su descripción y sus conexiones.</p>
       </div>
     </section>
 
     <!-- ===== 4. VIDEO DEL DOCUMENTAL ===== -->
     <section id="video" class="section">
       <h2 class="section-title">Documental</h2>
-      <p class="section-intro">Video integrado del documental consultado por el equipo.</p>
+      <p class="section-intro">Producción audiovisual original elaborada por el equipo sobre el ascenso del fascismo y el nazismo.</p>
       <div class="video-wrap">
-  <iframe
-    src="https://drive.google.com/file/d/1GHSALWXaBOjqluYCpEWiCSQ9KfRAYKzY/preview"
-    title="Documental del equipo sobre el ascenso del fascismo y el nazismo"
-    allow="autoplay; fullscreen"
-    loading="lazy"
-    allowfullscreen>
-  </iframe>
-</div>
+        <iframe
+          src="https://drive.google.com/file/d/1GHSALWXaBOjqluYCpEWiCSQ9KfRAYKzY/preview"
+          title="Documental del equipo sobre el ascenso del fascismo y el nazismo"
+          allow="autoplay; fullscreen"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
 
     <!-- ===== 5. LÍNEA DE TIEMPO FILTRABLE ===== -->
     <section id="linea" class="section">
       <h2 class="section-title">Línea de tiempo interactiva</h2>
-      <p class="section-intro">Filtrá los acontecimientos por país.</p>
+      <p class="section-intro">Filtra los acontecimientos por país.</p>
       <div class="filtros" id="filtrosPais">
         <button class="filtro-btn activo" data-pais="todos">Todos</button>
         <button class="filtro-btn" data-pais="Italia">Italia</button>
@@ -185,14 +201,26 @@
       <ul class="fuentes-lista" id="listaFuentes">
         <!-- Las fuentes se cargan con JS desde el arreglo -->
       </ul>
-
     </section>
 
+    <!-- ===== 8. USO DE IA ===== -->
+    <section id="ia" class="section">
+      <h2 class="section-title">Declaración de uso de IA</h2>
+      <div class="contexto-caja">
+        <p>
+          En el desarrollo de este proyecto se emplearon herramientas de inteligencia artificial únicamente como apoyo complementario para la estructuración inicial del código web (HTML, CSS y JavaScript), la organización de ideas y la revisión de redacción.
+        </p>
+        <p>
+          Toda la investigación histórica, el contraste con fuentes académicas, la validación de datos y fechas, la elaboración del guion y la grabación del documental fueron realizados y verificados íntegramente por los integrantes del equipo.
+        </p>
+      </div>
+    </section>
 
   </main>
 
   <footer class="site-footer">
-    <p>Trabajo práctico — Historia — Segunda Guerra Mundial: nazismo en Alemania y fascismo en Italia.</p>
+    <p>Proyecto Final: Historia Conectada — Segunda Guerra Mundial: nazismo en Alemania y fascismo en Italia.</p>
+    <p><a href="https://github.com/luciamateocarpio/historia-trabajo" target="_blank" rel="noopener noreferrer">Ver código fuente y documentación en GitHub</a></p>
   </footer>
 
   <script src="./script.js" defer></script>

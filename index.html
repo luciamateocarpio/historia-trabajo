@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,8 +20,6 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#contexto">Contexto histórico</a></li>
         <li><a href="#red">Red de relaciones</a></li>
-        
-        <li><a href="#galeria">Galería</a></li>
         <li><a href="#video">Documental</a></li>
         <li><a href="#linea">Línea de tiempo</a></li>
         <li><a href="#quiz">Preguntas</a></li>
@@ -32,29 +31,39 @@
   </header>
 
   <main class="container">
+
     <section id="inicio" class="section hero">
       <p class="eslogan"><em>«De las cenizas de la crisis al estallido de Europa: cuando las dictaduras convirtieron el resentimiento en guerra.»</em></p>
+
       <h2 class="pregunta-central">¿Cómo llegaron el fascismo y el nazismo al poder y hasta qué punto llevaron a Europa a la guerra?</h2>
+
       <div class="hero-botones">
         <a class="boton" href="#red">Explorar la red</a>
         <a class="boton boton-claro" href="#quiz">Ir a las preguntas</a>
       </div>
+
       <div class="stats">
         <div><b data-cuenta="nodos">0</b><span>nodos en la red</span></div>
         <div><b data-cuenta="eventosTiempo">0</b><span>eventos en la línea de tiempo</span></div>
-        
       </div>
+
       <div class="portada">
         <div class="proposito-publico">
           <h4>Finalidad y público objetivo</h4>
           <p><strong>Finalidad:</strong> Página web de carácter <strong>educativo y divulgativo</strong> diseñada para explicar, de forma rigurosa e interactiva, las causas, actores y procesos mediante los cuales el fascismo italiano y el nazismo alemán alcanzaron el poder y desencadenaron la Segunda Guerra Mundial en Europa.</p>
+
           <p><strong>Público objetivo:</strong> Estudiantes universitarios, docentes y público general interesado en comprender las relaciones históricas entre la crisis de entreguerras, el ascenso de los totalitarismos y el estallido del conflicto.</p>
         </div>
+
         <div class="integrantes">
           <h4>Integrantes (en orden alfabético por apellido)</h4>
           <ol>
-            <li>Ayta, Nayeli</li><li>Huarachi, Yennifer</li><li>Mateo, Lucía</li>
-            <li>Montalvo, Annel</li><li>Nuñez, Heidy</li><li>Sanchez, Mauricio</li>
+            <li>Ayta, Nayeli</li>
+            <li>Huarachi, Yennifer</li>
+            <li>Mateo, Lucía</li>
+            <li>Montalvo, Annel</li>
+            <li>Nuñez, Heidy</li>
+            <li>Sanchez, Mauricio</li>
           </ol>
         </div>
       </div>
@@ -62,17 +71,23 @@
 
     <section id="contexto" class="section reveal">
       <h2 class="section-title">Contexto histórico</h2>
+
       <div class="contexto-caja">
         <p>La Segunda Guerra Mundial no tuvo una sola causa. Fue el resultado de la combinación de los problemas que dejó la Primera Guerra Mundial, la inestabilidad de la República de Weimar, la crisis económica de 1929, el miedo al comunismo, la crisis de las democracias y la debilidad de la Sociedad de Naciones.</p>
+
         <p>La Primera Guerra Mundial dejó cerca de 10 millones de militares muertos, economías devastadas, deudas enormes y cuatro imperios desaparecidos. El Tratado de Versalles (1919) impuso a Alemania pérdidas territoriales, límites militares, reparaciones y la aceptación de la responsabilidad por la guerra. Estas condiciones alimentaron el resentimiento aprovechado por el nazismo.</p>
+
         <p>En Italia, el desempleo, los precios elevados, las huelgas, la violencia política y la frustración por los territorios no obtenidos favorecieron el surgimiento del fascismo. En Alemania, la hiperinflación de 1923, la crisis de 1929 y la inestabilidad política debilitaron la confianza en la República de Weimar. En ese contexto, Mussolini y Hitler utilizaron propaganda, violencia, intimidación y discursos nacionalistas para obtener apoyo.</p>
+
         <p>Durante la década de 1930, ambos regímenes impulsaron políticas expansionistas que debilitaron el orden internacional. La invasión de Etiopía, el rearme alemán, la anexión de Austria, la ocupación de Checoslovaquia y la invasión de Polonia llevaron finalmente al estallido de la Segunda Guerra Mundial.</p>
       </div>
     </section>
 
     <section id="red" class="section reveal">
       <h2 class="section-title">Red interactiva de relaciones históricas</h2>
+
       <p class="section-intro">Haz clic en un nodo: se resaltan sus conexiones y las demás se atenúan. Dentro del panel puedes saltar de un nodo a otro. Usa los filtros para mostrar solo un tipo.</p>
+
       <div class="filtros" id="filtros">
         <button class="filtro-btn activo" data-tipo="todos">Todos</button>
         <button class="filtro-btn" data-tipo="causa">Causas</button>
@@ -80,48 +95,66 @@
         <button class="filtro-btn" data-tipo="acontecimiento">Acontecimientos</button>
         <button class="filtro-btn" data-tipo="consecuencia">Consecuencias</button>
       </div>
+
       <div class="red-contenedor" id="redContenedor"></div>
-      <div class="panel-nodo" id="panelNodo"><p class="panel-placeholder">Selecciona un nodo para ver su descripción y sus conexiones.</p></div>
-    </section>
-<section id="galeria" class="section reveal">
-      <h2 class="section-title">Galería</h2>
-      <p class="section-intro">Haz clic en una imagen para verla en grande y navegar con las flechas (o con el teclado ← → y Esc).</p>
-      <div class="galeria" id="galeria-grid"></div>
+
+      <div class="panel-nodo" id="panelNodo">
+        <p class="panel-placeholder">Selecciona un nodo para ver su descripción y sus conexiones.</p>
+      </div>
     </section>
 
     <section id="video" class="section reveal">
       <h2 class="section-title">Documental</h2>
+
       <p class="section-intro">Producción audiovisual original elaborada por el equipo sobre el ascenso del fascismo y el nazismo.</p>
+
       <div class="video-wrap">
-        <iframe src="https://drive.google.com/file/d/1Qn77cfuH04DJiSObjdqUWUlnQQMWIuop/preview" title="Documental del equipo sobre el ascenso del fascismo y el nazismo" allow="autoplay; fullscreen" loading="lazy" allowfullscreen></iframe>
+        <iframe
+          src="https://drive.google.com/file/d/1Qn77cfuH04DJiSObjdqUWUlnQQMWIuop/preview"
+          title="Documental del equipo sobre el ascenso del fascismo y el nazismo"
+          allow="autoplay; fullscreen"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
       </div>
     </section>
 
     <section id="linea" class="section">
       <h2 class="section-title">Línea de tiempo interactiva</h2>
+
       <p class="section-intro">Filtra los acontecimientos por país. Haz clic en un evento para ampliarlo.</p>
+
       <div class="filtros" id="filtrosPais">
         <button class="filtro-btn activo" data-pais="todos">Todos</button>
         <button class="filtro-btn" data-pais="Italia">Italia</button>
         <button class="filtro-btn" data-pais="Alemania">Alemania</button>
       </div>
+
       <ul class="linea-tiempo" id="lineaTiempo"></ul>
     </section>
 
     <section id="quiz" class="section reveal">
       <h2 class="section-title">Pon a prueba lo aprendido</h2>
+
       <p class="section-intro">Responde 5 preguntas. Cada acierto suma un punto; si fallas, te explicamos por qué.</p>
+
       <div class="quiz-caja" id="quizContenedor"></div>
     </section>
 
     <section id="conclusiones" class="section reveal">
       <h2 class="section-title">Conclusiones</h2>
+
       <div class="conclusiones-caja">
         <h3>1. ¿Cómo llegaron al poder?</h3>
+
         <p>El fascismo y el nazismo llegaron al poder en un contexto de crisis económica, inestabilidad política, miedo al comunismo y desconfianza en las democracias. En Italia, Mussolini aprovechó el desempleo, las huelgas, la violencia política y la frustración nacionalista. La Marcha sobre Roma de octubre de 1922 presionó al rey Víctor Manuel III, quien encargó a Mussolini formar gobierno. Después, mediante la Ley Acerbo, la violencia de los Camisas Negras, la eliminación de la oposición y la propaganda, transformó gradualmente el gobierno de coalición en una dictadura.</p>
+
         <p>En Alemania, el Tratado de Versalles, la hiperinflación de 1923, la crisis de 1929 y la inestabilidad de la República de Weimar favorecieron el crecimiento del Partido Nazi. Hitler fue nombrado canciller el 30 de enero de 1933 por el presidente Paul von Hindenburg, después de acuerdos con sectores conservadores. Luego utilizó el incendio del Reichstag, el decreto de emergencia, la Ley Habilitante, la persecución y la eliminación de los partidos para destruir la democracia e instaurar el Tercer Reich.</p>
+
         <h3>2. ¿Hasta qué punto llevaron a Europa a la guerra?</h3>
+
         <p>Ambos regímenes fueron decisivos porque combinaron nacionalismo extremo, militarismo, expansionismo y debilitamiento del orden internacional. Italia invadió Etiopía en 1935 y se acercó a Alemania después de las sanciones internacionales. Alemania reintrodujo el servicio militar, remilitarizó Renania en 1936, anexó Austria en marzo de 1938 y ocupó el resto de Checoslovaquia en marzo de 1939. La política de apaciguamiento de Francia y Gran Bretaña no detuvo estas agresiones.</p>
+
         <p>El 1 de septiembre de 1939 Alemania invadió Polonia. Francia y Reino Unido declararon la guerra el 3 de septiembre, dando inicio oficial a la Segunda Guerra Mundial. Más adelante, Italia entró formalmente al conflicto junto a Alemania el 10 de junio de 1940. Por ello, el fascismo y el nazismo no fueron la única causa, pero sus decisiones expansionistas y la debilidad de la respuesta internacional llevaron a Europa al conflicto generalizado.</p>
       </div>
     </section>
@@ -133,26 +166,29 @@
 
     <section id="ia" class="section reveal">
       <h2 class="section-title">Declaración de uso de IA</h2>
+
       <div class="contexto-caja">
         <p>En el desarrollo de este proyecto se emplearon herramientas de inteligencia artificial únicamente como apoyo complementario para la estructuración inicial del código web (HTML, CSS y JavaScript), la organización de ideas y la revisión de redacción.</p>
+
         <p>Toda la investigación histórica, el contraste con fuentes académicas, la validación de datos y fechas, la elaboración del guion y la grabación del documental fueron realizados y verificados íntegramente por los integrantes del equipo.</p>
       </div>
     </section>
+
   </main>
 
-  <div id="lightbox" class="lightbox" hidden>
-    <button class="lb-cerrar" aria-label="Cerrar">×</button>
-    <button class="lb-nav lb-prev" aria-label="Anterior">‹</button>
-    <figure class="lb-fig"><div id="lbImg"></div><figcaption id="lbTxt"></figcaption></figure>
-    <button class="lb-nav lb-next" aria-label="Siguiente">›</button>
-  </div>
   <button id="arriba" class="arriba" aria-label="Volver arriba" hidden>↑</button>
 
   <footer class="site-footer">
     <p>Proyecto Final: Historia Conectada — Segunda Guerra Mundial: nazismo en Alemania y fascismo en Italia.</p>
-    <p><a href="https://github.com/luciamateocarpio/historia-trabajo" target="_blank" rel="noopener noreferrer">Ver código fuente y documentación en GitHub</a></p>
+
+    <p>
+      <a href="https://github.com/luciamateocarpio/historia-trabajo" target="_blank" rel="noopener noreferrer">
+        Ver código fuente y documentación en GitHub
+      </a>
+    </p>
   </footer>
 
   <script src="./script.js" defer></script>
 </body>
 </html>
+
